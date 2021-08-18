@@ -6,26 +6,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contact.css">
+
+
   <title>Document</title>
 </head>
 <body>
-  <ul>
-  <li><a href="index.htm">Home</a></li>
-  <li><a href="#skill">skill</a></li>
-  <li><a href="#work">work</a></li>
-  <li><a href="aboutme.htm">about me</a></li>
-  <li><a href="contact.htm">Contact</a></li>
-  <li style="float:left"><a class="active" href="#tofayel">tofayel</a></li>
-</ul>
+  <table class="Table">
+      <tr>
+      <td class="Td"><a href="index.htm">Home</a></td>
+      <td class="Td"><a href="skill.htm">skill</a></td>
+      <td class="Td"><a href="work.htm">work</a></td>
+      <td class="Td"><a href="aboutme.htm">about me</a></td>
+      <td class="Td"><a href="contact.htm">Contact</a></td>
 
-<form>
-  
-  <input type="text"  name="fname" ><br>
-  
-  <input type="text"  name="lname" ><br><br>
-  <input type="submit" value="Submit">
-</form> 
+      </tr>
 
-  
+    </table>
+
+
+
+
+
+<div class="container">
+  <form>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="firstname"  placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lastname"  placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">submit</label>
+    </div>
+    <div class="col-75">
+      <input type="button" id="btn" value="Show Full Name">
+    </div>
+  </div>
+
+    <div class="col-75">
+      <input type="text" id="fullname"  placeholder="Your full name..">
+    </div>
+
+
+
+
+  <div class="row">
+    <div class="col-25">
+      <label for="name">Password</label>
+    </div>
+    <div class="col-75">
+      <input type="password" id="pass"   placeholder="enter password..">
+      <button onclick="changepwd()"  type="button">view</button>
+      <button onclick="changepwd()"  type="button">hide</button>
+      <!--<input type="Checkbox" id="checkboxid">Show Password-->
+    </div>
+  </div>
+
+
+
+  <div class="col-75">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="jquery/main.js"></script>
 </html>
